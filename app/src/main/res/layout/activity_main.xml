@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/button1"
+            android:text="여행 계획"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:background="@color/colorPrimary"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"></Button>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/button2"
+            android:text="내 기록"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:background="@color/colorPrimary"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"></Button>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/button3"
+            android:text="AR"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:background="@color/colorPrimary"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"></Button>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/notice">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="445dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorPrimary"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="368dp"
+                    android:layout_height="368dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/trip"></ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="경 복 궁"
+                    android:textColor="#ffffff"
+                    android:textSize="25dp"></TextView>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="경복궁(사적 제117호)은 5대 궁궐 가운데 으뜸의 규모와 건축미를 자랑한다.경복궁에는 조선시대의 대표적인 건축물인 경회루와 향원정의 연못이 원형대로 남아 있으며, 근정전의 월대와 조각상들은 당시의 조각미술을 대표한다."
+                android:textColor="#000000"
+                android:textSize="15dp"></TextView>
+            <RelativeLayout
+                android:id="@+id/fragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

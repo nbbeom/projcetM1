@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- "Mark Favorite", should appear as action button if possible -->
+    <item
+        android:id="@+id/app_bar_fav"
+
+        android:title="너구리"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/app_bar_search"
+        android:title="고라니"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/app_bar_settings"
+        android:title="호랑이"
+        app:showAsAction="never"/>
+
+</menu>
